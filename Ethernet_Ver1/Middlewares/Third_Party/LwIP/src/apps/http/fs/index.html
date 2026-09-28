@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR dẫn tới thiệp 3D</title>
+  <link rel="preconnect" href="https://api.qrserver.com" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="gate">
+  <main class="scene gate">
+    <div class="glow"></div>
+    <section class="card gate-card">
+      <header>
+        <p class="eyebrow">QR entrance</p>
+        <h1>Quét mã để mở thiệp 3D</h1>
+        <p class="sub">Nhập lời chúc bạn muốn, mã QR sẽ dẫn thẳng tới trang thiệp bật nắp mượt mà.</p>
+      </header>
+
+      <div class="qr-panel gate-panel">
+        <div class="qr-frame large">
+          <img id="qrOnlyImg" alt="QR tới thiệp" loading="lazy" />
+          <div class="halo"></div>
+        </div>
+        <p class="hint center">Chia sẻ hoặc in mã QR này. Quét sẽ mở thiệp 3D kèm lời chúc bạn nhập.</p>
+      </div>
+
+      <div class="custom-box">
+        <label for="customMsg">Lời chúc của bạn</label>
+        <textarea id="customMsg" rows="3" placeholder="Nhập lời chúc..."></textarea>
+      </div>
+
+      <div class="controls">
+        <button id="createBtn">Tạo mã QR</button>
+        <button id="shuffleBtn">Gợi ý ngẫu nhiên</button>
+        <button id="downloadBtn" class="ghost">Tải QR</button>
+        <button id="copyQrBtn" class="ghost">Sao chép QR</button>
+        <button id="shareBtn" class="ghost">Chia sẻ</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+  <script src="main.js" type="module"></script>
+</body>
+</html>

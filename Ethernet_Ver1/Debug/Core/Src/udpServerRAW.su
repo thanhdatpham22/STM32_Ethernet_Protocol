@@ -1,0 +1,4 @@
+../Core/Src/udpServerRAW.c:44:6:udpServer_init	24	static
+../Core/Src/udpServerRAW.c:70:6:udpClient_connect	24	static
+../Core/Src/udpServerRAW.c:94:13:udpClient_send	120	static
+../Core/Src/udpServerRAW.c:158:6:udp_receive_callback	32	static
