@@ -1,0 +1,34 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lời chúc dành cho bạn</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="wish">
+  <main class="scene">
+    <div class="glow"></div>
+    <section class="card">
+      <header>
+        <p class="eyebrow">Spread kindness</p>
+        <h1>Lời chúc của bạn</h1>
+        <p class="sub">Trang này hiện ra sau khi bạn quét mã QR. Chúc bạn một ngày thật rực rỡ!</p>
+      </header>
+
+      <div class="wish show">
+        <span id="wishText"></span>
+        <div class="cursor"></div>
+      </div>
+
+      <div class="controls">
+        <button id="shuffleBtn">Đổi lời chúc</button>
+        <button id="copyBtn" class="ghost">Sao chép lời chúc</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+  <script src="main.js" type="module"></script>
+</body>
+</html>

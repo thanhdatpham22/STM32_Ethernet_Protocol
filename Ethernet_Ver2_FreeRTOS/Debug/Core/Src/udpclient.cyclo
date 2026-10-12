@@ -1,0 +1,4 @@
+../Core/Src/udpclient.c:40:13:udpinit_thread	5
+../Core/Src/udpclient.c:84:6:udpsend	1
+../Core/Src/udpclient.c:93:13:udpsend_thread	1
+../Core/Src/udpclient.c:104:6:udpclient_init	1

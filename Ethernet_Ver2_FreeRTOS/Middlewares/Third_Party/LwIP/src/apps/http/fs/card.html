@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thiệp 3D dành cho bạn</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="card">
+  <main class="scene card-scene">
+    <div class="glow"></div>
+
+    <section class="card3d" id="cardShell" aria-label="Thiệp 3D">
+      <div class="card-outer" id="cardOuter">
+        <div class="envelope">
+          <div class="envelope-body"></div>
+          <div class="envelope-flap"></div>
+          <div class="wax-seal" aria-label="Dấu sáp may mắn">🍀</div>
+          <div class="letter"> 
+            <p class="label">Lời chúc</p>
+            <p id="letterText"></p>
+            <div class="confetti"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <button class="open-hint" id="hintBtn">Chạm vào phong thư để mở</button>
+  </main>
+
+  <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+  <script src="main.js" type="module"></script>
+</body>
+</html>
